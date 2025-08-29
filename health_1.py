@@ -1,6 +1,6 @@
 import streamlit as st
 from snowflake.snowpark import Session
-
+from cryptography.hazmat.primitives import serialization
 # ------------------------
 # PAGE CONFIG
 # ------------------------
@@ -241,3 +241,4 @@ if user_input:
         st.markdown(answer)
 
     st.rerun()
+
